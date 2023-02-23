@@ -1,6 +1,6 @@
 {
   "name": "clubwoof-mobile-app",
-  "version": "1.0.1",
+  "version": "1.0.4",
   "scripts": {
     "start": "expo start --dev-client",
     "prebuild": "yarn expo prebuild",

@@ -6,8 +6,8 @@ import React, {useEffect} from 'react'
 import {useAuth} from '@/auth'
 import {useOnboarding} from '@/hooks'
 import {NavigationContainer} from '@/navigation/navigation-container'
-import {CompleteRegistrationComponent} from '@/screens/auth/complete-registration'
 import {Register} from '@/screens'
+import {CompleteRegistrationComponent} from '@/screens/auth/complete-registration'
 
 const Stack = createNativeStackNavigator()
 
