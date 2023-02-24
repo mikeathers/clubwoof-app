@@ -16,7 +16,7 @@ export default ({config}: ConfigContext): ExpoConfig => ({
   orientation: 'portrait',
   icon: Config.icon,
   userInterfaceStyle: 'light',
-  owner: "mikeathers1",
+  owner: 'mikeathers1',
   splash: {
     image: './assets/splashscreen.png',
     resizeMode: 'cover',
@@ -54,8 +54,7 @@ export default ({config}: ConfigContext): ExpoConfig => ({
   extra: {
     APP_ENV: appEnv,
     eas: {
-      projectId: "78da9f04-98b3-49f2-89c8-3a5e69cbb9a2"
-    }
-
+      projectId: '78da9f04-98b3-49f2-89c8-3a5e69cbb9a2',
+    },
   },
 })
