@@ -10,37 +10,36 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		1E619EE23E01424AA1F5560E /* Inter.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 87F49B324978422286E48A2E /* Inter.ttf */; };
+		1CC0AD6A2A9346609A1A2687 /* Inter.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 98494EFE788746B3835859F1 /* Inter.ttf */; };
 		3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */; };
-		44173DB2A345489A8CB7616F /* noop-file.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CA3F758AB64D3896786FF7 /* noop-file.swift */; };
-		44C81F9A0C0246E0B9C1ED68 /* Neucha-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 833AFCB194A745748A70E7AB /* Neucha-Regular.ttf */; };
-		8DB7DC7C81D3451B95714959 /* helvetica-bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 610771A712764AFFA774420A /* helvetica-bold.ttf */; };
+		7BA57A507B6E44E29B05FAC0 /* Neucha-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EF283F8A0BAC45548247722E /* Neucha-Regular.ttf */; };
+		88B7CD6375F4488CB07948EB /* helvetica.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2933C52DB387416E96B162DE /* helvetica.ttf */; };
 		96905EF65AED1B983A6B3ABC /* libPods-Clubwoof.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 58EEBF8E8E6FB1BC6CAF49B5 /* libPods-Clubwoof.a */; };
+		99A87BFC414F4B7D802DE76D /* helvetica-bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 599C07FBA3D3455787CFA4E0 /* helvetica-bold.ttf */; };
+		A6045D029E4844679CB914B1 /* noop-file.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F1C1908B544F66AA17956B /* noop-file.swift */; };
 		B18059E884C0ABDD17F3DC3D /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC715A2D49A985799AEE119 /* ExpoModulesProvider.swift */; };
 		BB2F792D24A3F905000567C9 /* Expo.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB2F792C24A3F905000567C9 /* Expo.plist */; };
-		D655CB24D3564730B20DFBEE /* helvetica.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A585FCF4A1549EA8185BE44 /* helvetica.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
-		0A585FCF4A1549EA8185BE44 /* helvetica.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = helvetica.ttf; path = ../assets/fonts/helvetica.ttf; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* Clubwoof.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clubwoof.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Clubwoof/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = Clubwoof/AppDelegate.mm; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Clubwoof/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Clubwoof/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Clubwoof/main.m; sourceTree = "<group>"; };
-		28CA3F758AB64D3896786FF7 /* noop-file.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = "noop-file.swift"; path = "Clubwoof/noop-file.swift"; sourceTree = "<group>"; };
-		49C664CF29A8A2F700C6DF18 /* ClubwoofRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = ClubwoofRelease.entitlements; path = Clubwoof/ClubwoofRelease.entitlements; sourceTree = "<group>"; };
+		2933C52DB387416E96B162DE /* helvetica.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = helvetica.ttf; path = ../assets/fonts/helvetica.ttf; sourceTree = "<group>"; };
 		58EEBF8E8E6FB1BC6CAF49B5 /* libPods-Clubwoof.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Clubwoof.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		610771A712764AFFA774420A /* helvetica-bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "helvetica-bold.ttf"; path = "../assets/fonts/helvetica-bold.ttf"; sourceTree = "<group>"; };
+		599C07FBA3D3455787CFA4E0 /* helvetica-bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "helvetica-bold.ttf"; path = "../assets/fonts/helvetica-bold.ttf"; sourceTree = "<group>"; };
 		6C2E3173556A471DD304B334 /* Pods-Clubwoof.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clubwoof.debug.xcconfig"; path = "Target Support Files/Pods-Clubwoof/Pods-Clubwoof.debug.xcconfig"; sourceTree = "<group>"; };
+		75F1C1908B544F66AA17956B /* noop-file.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = "noop-file.swift"; path = "Clubwoof/noop-file.swift"; sourceTree = "<group>"; };
 		7A4D352CD337FB3A3BF06240 /* Pods-Clubwoof.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clubwoof.release.xcconfig"; path = "Target Support Files/Pods-Clubwoof/Pods-Clubwoof.release.xcconfig"; sourceTree = "<group>"; };
-		833AFCB194A745748A70E7AB /* Neucha-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Neucha-Regular.ttf"; path = "../assets/fonts/Neucha-Regular.ttf"; sourceTree = "<group>"; };
-		87F49B324978422286E48A2E /* Inter.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Inter.ttf; path = ../assets/fonts/Inter.ttf; sourceTree = "<group>"; };
+		98494EFE788746B3835859F1 /* Inter.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Inter.ttf; path = ../assets/fonts/Inter.ttf; sourceTree = "<group>"; };
 		AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SplashScreen.storyboard; path = Clubwoof/SplashScreen.storyboard; sourceTree = "<group>"; };
 		BB2F792C24A3F905000567C9 /* Expo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Expo.plist; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		EF283F8A0BAC45548247722E /* Neucha-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Neucha-Regular.ttf"; path = "../assets/fonts/Neucha-Regular.ttf"; sourceTree = "<group>"; };
 		FAC715A2D49A985799AEE119 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-Clubwoof/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -59,7 +58,6 @@
 		13B07FAE1A68108700A75B9A /* Clubwoof */ = {
 			isa = PBXGroup;
 			children = (
-				49C664CF29A8A2F700C6DF18 /* ClubwoofRelease.entitlements */,
 				BB2F792B24A3F905000567C9 /* Supporting */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
@@ -68,7 +66,7 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB71A68108700A75B9A /* main.m */,
 				AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */,
-				28CA3F758AB64D3896786FF7 /* noop-file.swift */,
+				75F1C1908B544F66AA17956B /* noop-file.swift */,
 			);
 			name = Clubwoof;
 			sourceTree = "<group>";
@@ -80,17 +78,6 @@
 				58EEBF8E8E6FB1BC6CAF49B5 /* libPods-Clubwoof.a */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		4187128868B642E684F408E3 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				87F49B324978422286E48A2E /* Inter.ttf */,
-				833AFCB194A745748A70E7AB /* Neucha-Regular.ttf */,
-				0A585FCF4A1549EA8185BE44 /* helvetica.ttf */,
-				610771A712764AFFA774420A /* helvetica-bold.ttf */,
-			);
-			name = Resources;
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
@@ -109,7 +96,7 @@
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				D65327D7A22EEC0BE12398D9 /* Pods */,
 				D7E4C46ADA2E9064B798F356 /* ExpoModulesProviders */,
-				4187128868B642E684F408E3 /* Resources */,
+				9111166C35F64EBA8D4B252F /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -122,6 +109,17 @@
 				13B07F961A680F5B00A75B9A /* Clubwoof.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		9111166C35F64EBA8D4B252F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				98494EFE788746B3835859F1 /* Inter.ttf */,
+				EF283F8A0BAC45548247722E /* Neucha-Regular.ttf */,
+				2933C52DB387416E96B162DE /* helvetica.ttf */,
+				599C07FBA3D3455787CFA4E0 /* helvetica-bold.ttf */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		92DBD88DE9BF7D494EA9DA96 /* Clubwoof */ = {
@@ -193,7 +191,6 @@
 					13B07F861A680F5B00A75B9A = {
 						DevelopmentTeam = 3L3R5L2ZA5;
 						LastSwiftMigration = 1250;
-						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -223,10 +220,10 @@
 				BB2F792D24A3F905000567C9 /* Expo.plist in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */,
-				1E619EE23E01424AA1F5560E /* Inter.ttf in Resources */,
-				44C81F9A0C0246E0B9C1ED68 /* Neucha-Regular.ttf in Resources */,
-				D655CB24D3564730B20DFBEE /* helvetica.ttf in Resources */,
-				8DB7DC7C81D3451B95714959 /* helvetica-bold.ttf in Resources */,
+				1CC0AD6A2A9346609A1A2687 /* Inter.ttf in Resources */,
+				7BA57A507B6E44E29B05FAC0 /* Neucha-Regular.ttf in Resources */,
+				88B7CD6375F4488CB07948EB /* helvetica.ttf in Resources */,
+				99A87BFC414F4B7D802DE76D /* helvetica-bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,7 +319,7 @@
 				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 				B18059E884C0ABDD17F3DC3D /* ExpoModulesProvider.swift in Sources */,
-				44173DB2A345489A8CB7616F /* noop-file.swift in Sources */,
+				A6045D029E4844679CB914B1 /* noop-file.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,8 +333,6 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Clubwoof/Clubwoof.entitlements;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3L3R5L2ZA5;
 				ENABLE_BITCODE = NO;
@@ -354,9 +349,8 @@
 					"-lc++",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_DEBUG";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.clubwoof.development";
-				PRODUCT_NAME = "Clubwoof";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.clubwoof.development;
+				PRODUCT_NAME = Clubwoof;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -370,9 +364,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = Clubwoof/ClubwoofRelease.entitlements;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = Clubwoof/Clubwoof.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3L3R5L2ZA5;
 				INFOPLIST_FILE = Clubwoof/Info.plist;
@@ -384,9 +376,8 @@
 					"-lc++",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_RELEASE";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.clubwoof.development";
-				PRODUCT_NAME = "Clubwoof";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.clubwoof.development;
+				PRODUCT_NAME = Clubwoof;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";

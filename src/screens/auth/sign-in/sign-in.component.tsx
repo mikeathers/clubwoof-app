@@ -5,43 +5,44 @@ import {SafeAreaView} from 'react-native'
 
 import {Button, TextInput} from '@/components'
 
-import {formSchema} from './register.helpers'
+import {formSchema} from './sign-in.helpers'
 import {
   Container,
+  CTAAction,
+  CTAText,
+  CTATextContainer,
   ErrorText,
   FormContent,
-  GoToLoginAction,
-  GoToLoginContainer,
-  GoToLoginText,
+  HeaderImage,
   Heading,
-  RegisterImage,
-} from './register.styles'
+} from './sign-in.styles'
 
-interface RegisterComponentProps {
-  i18n: i18nRegisterScreen
+interface SignInComponentProps {
+  i18n: i18nSignInScreen
   handleSubmitForm: (data: FormDetails) => Promise<void>
   error: Error | null | undefined
   isLoading: boolean
 }
 
-export const RegisterComponent: React.FC<RegisterComponentProps> = (props) => {
+export const SignInComponent: React.FC<SignInComponentProps> = (props) => {
   const {i18n, handleSubmitForm, isLoading, error} = props
   const {navigate} = useNavigation<Navigate>()
   return (
     <Container>
-      <RegisterImage source={require('./assets/waving-dog.png')} />
+      <HeaderImage source={require('./assets/dog-on-walk.png')} />
       <Formik
-        initialValues={{emailAddress: '', password: '', confirmPassword: ''}}
+        initialValues={{emailAddress: '', password: ''}}
         onSubmit={(values) => handleSubmitForm(values)}
         validationSchema={formSchema(i18n)}
         validateOnChange={false}
         validateOnBlur={false}
       >
         {({handleChange, handleBlur, handleSubmit, values, errors}) => {
+          // @ts-ignore
           return (
             <FormContent>
               <SafeAreaView>
-                <Heading>Create an account</Heading>
+                <Heading>Sign in</Heading>
                 <TextInput
                   name={'emailAddress'}
                   placeholder={i18n.inputs.email.placeholder}
@@ -64,19 +65,7 @@ export const RegisterComponent: React.FC<RegisterComponentProps> = (props) => {
                   value={values.password}
                   error={errors.password}
                 />
-                <TextInput
-                  name={'confirmPassword'}
-                  placeholder={i18n.inputs.confirmPassword.placeholder}
-                  label={i18n.inputs.confirmPassword.label}
-                  secureTextEntry
-                  textContentType="newPassword"
-                  keyboardType="default"
-                  marginBottom="space3x"
-                  onChangeText={handleChange('confirmPassword')}
-                  onBlur={handleBlur('confirmPassword')}
-                  value={values.confirmPassword}
-                  error={errors.confirmPassword}
-                />
+
                 {error && <ErrorText>{`${error.message}`}</ErrorText>}
                 <Button
                   loading={isLoading}
@@ -85,12 +74,26 @@ export const RegisterComponent: React.FC<RegisterComponentProps> = (props) => {
                 >
                   {i18n.submitButton}
                 </Button>
-                <GoToLoginContainer>
-                  <GoToLoginText>{i18n.signIn}</GoToLoginText>
-                  <GoToLoginAction onPress={() => navigate('SignIn')}>
-                    {i18n.signInAction}
-                  </GoToLoginAction>
-                </GoToLoginContainer>
+                <CTATextContainer>
+                  <CTAText>{i18n.signUp}</CTAText>
+                  <CTAAction
+                    onPress={() => {
+                      navigate('Register')
+                    }}
+                  >
+                    {i18n.signUpAction}
+                  </CTAAction>
+                </CTATextContainer>
+                <CTATextContainer>
+                  <CTAText>{i18n.forgotYourPassword}</CTAText>
+                  <CTAAction
+                    onPress={() => {
+                      navigate('Register')
+                    }}
+                  >
+                    {i18n.forgotYourPasswordAction}
+                  </CTAAction>
+                </CTATextContainer>
               </SafeAreaView>
             </FormContent>
           )

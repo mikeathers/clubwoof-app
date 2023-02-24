@@ -28,14 +28,14 @@ export const StyledTextInput = styled(NTextInput)`
   width: 285px;
   height: 40px;
   font-family: ${fonts.neucha};
-  font-size: ${fontSizes.m};
+  font-size: ${fontSizes.l};
   border: 1px solid ${colors.darkPurple};
   border-radius: ${borderRadius.rounded};
   padding: ${spacing.space1x} ${spacing.space2x};
 `
 
 export const Label = styled(NText)`
-  font-size: ${fontSizes.m};
+  font-size: ${fontSizes.l};
   font-family: ${fonts.neucha};
   margin-bottom: ${spacing.space1x};
 `

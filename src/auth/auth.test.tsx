@@ -3,7 +3,7 @@ import {renderHook, waitFor} from '@testing-library/react-native'
 import type {ReactElement} from 'react'
 
 import type {CognitoUserAttributes} from './auth.context'
-import {AuthContext, useAuth} from './auth.context'
+import {AuthContext, useAuthOld} from './auth.context'
 import {mockCognitoUserAttributes} from './auth.mocks'
 import {initialState} from './auth-reducer'
 
@@ -26,7 +26,7 @@ const wrapper = (props: {children: ReactElement}) => (
 )
 
 const renderUseAuth = (withoutProvider = false) =>
-  renderHook(() => useAuth(), {
+  renderHook(() => useAuthOld(), {
     wrapper: withoutProvider ? undefined : wrapper,
   })
 

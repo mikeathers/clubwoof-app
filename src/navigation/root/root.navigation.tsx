@@ -3,18 +3,14 @@ import {useFonts} from 'expo-font'
 import * as SplashScreen from 'expo-splash-screen'
 import React, {useEffect} from 'react'
 
-import {useAuth} from '@/auth'
-import {useOnboarding} from '@/hooks'
+import {useAuthOld} from '@/auth'
+import {AuthNavigation} from '@/navigation/auth'
 import {NavigationContainer} from '@/navigation/navigation-container'
-import {Register} from '@/screens'
-import {CompleteRegistrationComponent} from '@/screens/auth/complete-registration'
 
 const Stack = createNativeStackNavigator()
 
 const RootNavigation: React.FC = () => {
-  const {
-    state: {isIdle},
-  } = useAuth()
+  const {state} = useAuthOld()
 
   useFonts({
     Neucha: require('../../../assets/fonts/Neucha-Regular.ttf'),
@@ -27,18 +23,19 @@ const RootNavigation: React.FC = () => {
   //   }
   // }, [fontsLoaded])
 
-  const {needsOnboarding} = useOnboarding()
+  // const {needsOnboarding} = useOnboarding()
 
   const hideSplash = React.useCallback(async () => {
     await SplashScreen.hideAsync()
   }, [])
 
   useEffect(() => {
-    if (!isIdle) {
+    if (!state.isIdle) {
       hideSplash()
     }
-  }, [hideSplash, isIdle])
-  console.log({needsOnboarding})
+    console.log({state})
+  }, [hideSplash, state])
+  // console.log({needsOnboarding})
   return (
     <Stack.Navigator
       screenOptions={{
@@ -47,14 +44,7 @@ const RootNavigation: React.FC = () => {
         animation: 'slide_from_bottom',
       }}
     >
-      <Stack.Group>
-        <Stack.Screen name={'Register'} component={Register} />
-        <Stack.Screen
-          name={'RegistrationComplete'}
-          component={CompleteRegistrationComponent}
-        />
-      </Stack.Group>
-      {/*{needsOnboarding ? <Stack.Screen name="Onboarding" component={Onboarding} /> : null}*/}
+      <Stack.Screen name={'Authentication'} component={AuthNavigation} />
     </Stack.Navigator>
   )
 }

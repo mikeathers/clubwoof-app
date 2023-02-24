@@ -1,14 +1,14 @@
 import type {CognitoUser} from '@aws-amplify/auth'
 import {Auth} from '@aws-amplify/auth'
-import type {Dispatch, FC} from 'react'
-import React from 'react'
-import {
+import type {Dispatch} from 'react'
+import React, {
   createContext,
   useCallback,
   useContext,
   useEffect,
   useMemo,
   useReducer,
+  useState,
 } from 'react'
 
 import {getItem, setItem} from '@/utils'
@@ -39,9 +39,11 @@ export type CognitoUserAttributes = {
   'custom:isAdmin'?: boolean
 }
 
-const useAuth = (): AuthContextValue => {
+const useAuthOld = () => {
   const context = useContext(AuthContext)
+
   console.log(context?.state)
+
   if (!context) throw new Error('useAuth must be wrapped in an AuthProvider')
 
   const {state, dispatch} = context
@@ -94,27 +96,33 @@ const useAuth = (): AuthContextValue => {
   }
 }
 
-const getInitialState = (): AuthState => {
-  const state = getItem<AuthState>('initialState')
-  if (state && state !== null) {
-    return state ? (state as AuthState) : initialState
-  }
+//
+// const setStateInLocalStorage = (state: AuthState) => {
+//   setItem<AuthState>('authState', state)
+// }
 
-  return initialState
-}
-
-const setStateInLocalStorage = (state: AuthState) => {
-  setItem<AuthState>('authState', state)
-}
-
-const AuthProvider: FC<AuthProviderProps> = ({children}) => {
-  const [state, dispatch] = useReducer(authReducer, getInitialState())
+const AuthProvider: React.FC<AuthProviderProps> = ({children}) => {
+  const [savedInitialState, setSavedInitialState] = useState<AuthState>(initialState)
 
   useEffect(() => {
-    setStateInLocalStorage(state)
+    const getInitialState = async () => {
+      const state = await getItem<AuthState>('initialState')
+
+      if (state && state !== null) {
+        setSavedInitialState(state)
+      }
+    }
+
+    getInitialState()
+  }, [])
+
+  const [state, dispatch] = useReducer(authReducer, savedInitialState)
+
+  useEffect(() => {
+    setItem<AuthState>('authState', state)
 
     return () => {
-      setStateInLocalStorage(state)
+      setItem<AuthState>('authState', state)
     }
   }, [state])
 
@@ -133,4 +141,4 @@ const AuthProvider: FC<AuthProviderProps> = ({children}) => {
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>
 }
 
-export {AuthProvider, useAuth}
+export {AuthProvider, useAuthOld}

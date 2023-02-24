@@ -4,10 +4,10 @@ import {useTranslation} from 'react-i18next'
 
 import {TEMP_LOCAL_STORAGE_PWD_KEY} from '@/constants'
 import {useSafeAsync} from '@/hooks'
-import {RegistrationCompleteComponent} from '@/screens/auth/register/registration-complete.component'
-import {storage} from '@/utils'
+import {setItem} from '@/utils'
 
 import {RegisterComponent} from './register.component'
+import {RegistrationCompleteComponent} from './registration-complete.component'
 
 export const Register: React.FC = () => {
   const {t} = useTranslation()
@@ -22,7 +22,7 @@ export const Register: React.FC = () => {
         password,
       })
 
-      storage.set(TEMP_LOCAL_STORAGE_PWD_KEY, password)
+      setItem(TEMP_LOCAL_STORAGE_PWD_KEY, password)
     }
   }
 

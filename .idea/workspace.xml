@@ -2,12 +2,76 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="94923934-5403-4eb8-bd87-734f116c2a87" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ios/Clubwoof/ClubwoofRelease.entitlements" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/auth/auth.hook.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/screens/auth/sign-in/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/screens/auth/sign-in/sign-in.component.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/screens/auth/sign-in/sign-in.container.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/screens/auth/sign-in/sign-in.helpers.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/screens/auth/sign-in/sign-in.styles.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Clubwoof.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Clubwoof.xcodeproj/project.pbxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Clubwoof/Clubwoof.entitlements" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Clubwoof/Clubwoof.entitlements" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Clubwoof/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Clubwoof/Info.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/dog-on-walk.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/babel.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/babel.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/.xcode.env" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Clubwoof.xcodeproj/project.pbxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Clubwoof.xcodeproj/xcshareddata/xcschemes/Clubwoof.xcscheme" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Clubwoof.xcworkspace/contents.xcworkspacedata" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Clubwoof.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Clubwoof.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Clubwoof/AppDelegate.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Clubwoof/AppDelegate.mm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Clubwoof/Clubwoof.entitlements" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Clubwoof/ClubwoofRelease.entitlements" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Clubwoof/Images.xcassets/AppIcon.appiconset/App-Icon-20x20@1x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Clubwoof/Images.xcassets/AppIcon.appiconset/App-Icon-20x20@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Clubwoof/Images.xcassets/AppIcon.appiconset/App-Icon-20x20@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Clubwoof/Images.xcassets/AppIcon.appiconset/App-Icon-29x29@1x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Clubwoof/Images.xcassets/AppIcon.appiconset/App-Icon-29x29@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Clubwoof/Images.xcassets/AppIcon.appiconset/App-Icon-29x29@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Clubwoof/Images.xcassets/AppIcon.appiconset/App-Icon-40x40@1x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Clubwoof/Images.xcassets/AppIcon.appiconset/App-Icon-40x40@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Clubwoof/Images.xcassets/AppIcon.appiconset/App-Icon-40x40@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Clubwoof/Images.xcassets/AppIcon.appiconset/App-Icon-60x60@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Clubwoof/Images.xcassets/AppIcon.appiconset/App-Icon-60x60@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Clubwoof/Images.xcassets/AppIcon.appiconset/App-Icon-76x76@1x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Clubwoof/Images.xcassets/AppIcon.appiconset/App-Icon-76x76@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Clubwoof/Images.xcassets/AppIcon.appiconset/App-Icon-83.5x83.5@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Clubwoof/Images.xcassets/AppIcon.appiconset/Contents.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Clubwoof/Images.xcassets/AppIcon.appiconset/ItunesArtwork@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Clubwoof/Images.xcassets/Contents.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Clubwoof/Images.xcassets/SplashScreen.imageset/Contents.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Clubwoof/Images.xcassets/SplashScreen.imageset/image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Clubwoof/Images.xcassets/SplashScreenBackground.imageset/Contents.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Clubwoof/Images.xcassets/SplashScreenBackground.imageset/image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Clubwoof/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Clubwoof/SplashScreen.storyboard" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Clubwoof/Supporting/Expo.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Clubwoof/main.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Clubwoof/noop-file.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Podfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Podfile.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Podfile.properties.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/auth/auth.context.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/auth/auth.context.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/auth/auth.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/auth/auth.test.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/text-input/text-input.styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/text-input/text-input.styles.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/global.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/global.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/use-onboarding/use-onboarding.hook.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/use-onboarding/use-onboarding.hook.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/i18n/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/i18n/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/i18n/translations/en.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/i18n/translations/en.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/i18n/utils.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/i18n/utils.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/navigation/auth/auth.navigation.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/navigation/auth/auth.navigation.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/navigation/navigation-container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/navigation/navigation-container.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/navigation/root/root.navigation.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/navigation/root/root.navigation.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/auth/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/auth/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/auth/register/register.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/auth/register/register.component.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/auth/register/register.container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/auth/register/register.container.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/auth/register/register.styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/auth/register/register.styles.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/storage.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/storage.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tsconfig.tsbuildinfo" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.tsbuildinfo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,10 +87,10 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="OptimizeOnSaveOptions">
-    <option name="myRunOnSave" value="true" />
-  </component>
   <component name="ProjectId" id="2M98kGkXNLyRzsnwdg6umxzkVHO" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -50,6 +114,9 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/screens/auth/sign-in/assets" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -60,6 +127,7 @@
       <option name="presentableId" value="Default" />
       <updated>1677168580100</updated>
       <workItem from="1677168581660" duration="8027000" />
+      <workItem from="1677231280286" duration="26714000" />
     </task>
     <servers />
   </component>

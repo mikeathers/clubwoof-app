@@ -1,17 +1,21 @@
 import {createNativeStackNavigator} from '@react-navigation/native-stack'
 
-import {Register} from '@/screens'
+import {Register, SignIn} from '@/screens'
 
-const Stack = createNativeStackNavigator()
+export type AuthStackParamList = {
+  SignIn: undefined
+  Register: undefined
+}
+
+const Stack = createNativeStackNavigator<AuthStackParamList>()
 
 export const AuthNavigation = () => {
   return (
     <Stack.Navigator>
-      <Stack.Screen
-        name={'Register'}
-        component={Register}
-        options={{headerShown: false}}
-      />
+      <Stack.Group screenOptions={{headerShown: false}}>
+        <Stack.Screen name={'SignIn'} component={SignIn} />
+        <Stack.Screen name={'Register'} component={Register} />
+      </Stack.Group>
     </Stack.Navigator>
   )
 }

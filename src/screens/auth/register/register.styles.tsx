@@ -26,10 +26,27 @@ export const RegisterImage = styled(SImage)`
 `
 export const FormContent = styled(NView)``
 
-export const Error = styled(NText)`
+export const ErrorText = styled(NText)`
   color: red;
   margin-bottom: ${spacing.space1x};
   width: 285px;
+`
+
+export const GoToLoginContainer = styled(NView)`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: ${spacing.space2x};
+`
+export const GoToLoginText = styled(NText)`
+  margin-right: ${spacing.spaceHalfx};
+  font-family: ${fonts.neucha};
+  font-size: ${fontSizes.l};
+`
+export const GoToLoginAction = styled(NText)`
+  font-family: ${fonts.neucha};
+  font-size: ${fontSizes.l};
+  color: ${colors.coral};
 `
 
 export const SignUpCompleteContainer = styled(NView)`

@@ -32,6 +32,10 @@ declare global {
     | FormikErrors<any>[]
     | undefined
 
+  type Navigate = {
+    navigate: (value: string) => void
+  }
+
   /**** Internationalisation *****/
 
   type i18nRegisterScreen = {
@@ -68,7 +72,7 @@ declare global {
     weWillBeInTouch: string
   }
 
-  type i18nLoginScreen = {
+  type i18nSignInScreen = {
     heading: string
     subHeading: string
     submitButton: string
@@ -77,8 +81,8 @@ declare global {
     signUp: string
     signUpAction: string
     inputs: {
-      email: string
-      password: string
+      email: {label: string; placeholder: string}
+      password: {label: string; placeholder: string}
     }
     validation: {
       email: string
