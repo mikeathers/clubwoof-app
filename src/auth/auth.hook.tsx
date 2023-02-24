@@ -96,6 +96,7 @@ export const logUserIn = async (
   let accessToken
   let refreshToken
   const user = (await Auth.signIn(email, password)) as User
+  console.log('here')
   const cognitoUser = (await Auth.currentUserInfo()) as CognitoUser & {
     attributes: CognitoUserAttributes
   }

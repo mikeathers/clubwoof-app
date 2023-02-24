@@ -1,7 +1,7 @@
 import {useNavigation} from '@react-navigation/native'
 import {Formik} from 'formik'
 import React from 'react'
-import {SafeAreaView} from 'react-native'
+import {KeyboardAvoidingView, SafeAreaView} from 'react-native'
 
 import {Button, TextInput} from '@/components'
 
@@ -29,19 +29,19 @@ export const SignInComponent: React.FC<SignInComponentProps> = (props) => {
   const {navigate} = useNavigation<Navigate>()
   return (
     <Container>
-      <HeaderImage source={require('./assets/dog-on-walk.png')} />
-      <Formik
-        initialValues={{emailAddress: '', password: ''}}
-        onSubmit={(values) => handleSubmitForm(values)}
-        validationSchema={formSchema(i18n)}
-        validateOnChange={false}
-        validateOnBlur={false}
-      >
-        {({handleChange, handleBlur, handleSubmit, values, errors}) => {
-          // @ts-ignore
-          return (
-            <FormContent>
-              <SafeAreaView>
+      <KeyboardAvoidingView behavior="position">
+        <HeaderImage source={require('./assets/dog-on-walk.png')} />
+        <Formik
+          initialValues={{emailAddress: '', password: ''}}
+          onSubmit={(values) => handleSubmitForm(values)}
+          validationSchema={formSchema(i18n)}
+          validateOnChange={false}
+          validateOnBlur={false}
+        >
+          {({handleChange, handleBlur, handleSubmit, values, errors}) => {
+            // @ts-ignore
+            return (
+              <FormContent>
                 <Heading>Sign in</Heading>
                 <TextInput
                   name={'emailAddress'}
@@ -67,38 +67,40 @@ export const SignInComponent: React.FC<SignInComponentProps> = (props) => {
                 />
 
                 {error && <ErrorText>{`${error.message}`}</ErrorText>}
-                <Button
-                  loading={isLoading}
-                  disabled={isLoading}
-                  onPress={() => handleSubmit()}
-                >
-                  {i18n.submitButton}
-                </Button>
-                <CTATextContainer>
-                  <CTAText>{i18n.signUp}</CTAText>
-                  <CTAAction
-                    onPress={() => {
-                      navigate('Register')
-                    }}
+                <SafeAreaView>
+                  <Button
+                    loading={isLoading}
+                    disabled={isLoading}
+                    onPress={() => handleSubmit()}
                   >
-                    {i18n.signUpAction}
-                  </CTAAction>
-                </CTATextContainer>
-                <CTATextContainer>
-                  <CTAText>{i18n.forgotYourPassword}</CTAText>
-                  <CTAAction
-                    onPress={() => {
-                      navigate('Register')
-                    }}
-                  >
-                    {i18n.forgotYourPasswordAction}
-                  </CTAAction>
-                </CTATextContainer>
-              </SafeAreaView>
-            </FormContent>
-          )
-        }}
-      </Formik>
+                    {i18n.submitButton}
+                  </Button>
+                  <CTATextContainer>
+                    <CTAText>{i18n.signUp}</CTAText>
+                    <CTAAction
+                      onPress={() => {
+                        navigate('Register')
+                      }}
+                    >
+                      {i18n.signUpAction}
+                    </CTAAction>
+                  </CTATextContainer>
+                  <CTATextContainer>
+                    <CTAText>{i18n.forgotYourPassword}</CTAText>
+                    <CTAAction
+                      onPress={() => {
+                        navigate('Register')
+                      }}
+                    >
+                      {i18n.forgotYourPasswordAction}
+                    </CTAAction>
+                  </CTATextContainer>
+                </SafeAreaView>
+              </FormContent>
+            )
+          }}
+        </Formik>
+      </KeyboardAvoidingView>
     </Container>
   )
 }

@@ -1,7 +1,7 @@
 import {useNavigation} from '@react-navigation/native'
 import {Formik} from 'formik'
 import React from 'react'
-import {SafeAreaView} from 'react-native'
+import {KeyboardAvoidingView, SafeAreaView} from 'react-native'
 
 import {Button, TextInput} from '@/components'
 
@@ -29,18 +29,18 @@ export const RegisterComponent: React.FC<RegisterComponentProps> = (props) => {
   const {navigate} = useNavigation<Navigate>()
   return (
     <Container>
-      <RegisterImage source={require('./assets/waving-dog.png')} />
-      <Formik
-        initialValues={{emailAddress: '', password: '', confirmPassword: ''}}
-        onSubmit={(values) => handleSubmitForm(values)}
-        validationSchema={formSchema(i18n)}
-        validateOnChange={false}
-        validateOnBlur={false}
-      >
-        {({handleChange, handleBlur, handleSubmit, values, errors}) => {
-          return (
-            <FormContent>
-              <SafeAreaView>
+      <KeyboardAvoidingView behavior="position">
+        <RegisterImage source={require('./assets/waving-dog.png')} />
+        <Formik
+          initialValues={{emailAddress: '', password: '', confirmPassword: ''}}
+          onSubmit={(values) => handleSubmitForm(values)}
+          validationSchema={formSchema(i18n)}
+          validateOnChange={false}
+          validateOnBlur={false}
+        >
+          {({handleChange, handleBlur, handleSubmit, values, errors}) => {
+            return (
+              <FormContent>
                 <Heading>Create an account</Heading>
                 <TextInput
                   name={'emailAddress'}
@@ -78,24 +78,26 @@ export const RegisterComponent: React.FC<RegisterComponentProps> = (props) => {
                   error={errors.confirmPassword}
                 />
                 {error && <ErrorText>{`${error.message}`}</ErrorText>}
-                <Button
-                  loading={isLoading}
-                  disabled={isLoading}
-                  onPress={() => handleSubmit()}
-                >
-                  {i18n.submitButton}
-                </Button>
-                <GoToLoginContainer>
-                  <GoToLoginText>{i18n.signIn}</GoToLoginText>
-                  <GoToLoginAction onPress={() => navigate('SignIn')}>
-                    {i18n.signInAction}
-                  </GoToLoginAction>
-                </GoToLoginContainer>
-              </SafeAreaView>
-            </FormContent>
-          )
-        }}
-      </Formik>
+                <SafeAreaView>
+                  <Button
+                    loading={isLoading}
+                    disabled={isLoading}
+                    onPress={() => handleSubmit()}
+                  >
+                    {i18n.submitButton}
+                  </Button>
+                  <GoToLoginContainer>
+                    <GoToLoginText>{i18n.signIn}</GoToLoginText>
+                    <GoToLoginAction onPress={() => navigate('SignIn')}>
+                      {i18n.signInAction}
+                    </GoToLoginAction>
+                  </GoToLoginContainer>
+                </SafeAreaView>
+              </FormContent>
+            )
+          }}
+        </Formik>
+      </KeyboardAvoidingView>
     </Container>
   )
 }
